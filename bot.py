@@ -3515,17 +3515,16 @@ async def cards_retry(c: CallbackQuery):
     await start_cards(c, info["key"], info["repeat"])
     await c.answer()
 
-
 async def main():
-bot = Bot(TOKEN)
-await bot.set_my_commands([
-BotCommand(command="menu", description="Главное меню"),
-BotCommand(command="q", description="Вопрос программы КП / Q"),
-BotCommand(command="stats", description="Моя статистика"),
-BotCommand(command="help", description="Справка"),
+    bot = Bot(TOKEN)
+    await bot.set_my_commands([
+    BotCommand(command="menu", description="Главное меню"),
+    BotCommand(command="q", description="Вопрос программы КП / Q"),
+    BotCommand(command="stats", description="Моя статистика"),
+    BotCommand(command="help", description="Справка"),
 ])
-await dp.start_polling(bot)
+    await dp.start_polling(bot)
 
 if name == 'main':
-asyncio.run(main())
+    asyncio.run(main())
 
