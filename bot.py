@@ -3528,6 +3528,16 @@ async def main():
     await dp.start_polling(bot)
 
 
-if __name__ == "__main__":
-    asyncio.run(main))
+async def main():
+TOKEN = "8875284262:AAHYMAPPpE2TsLqRnSANBTaHVZQt8B1Beb8"
+await bot.set_my_commands([
+BotCommand(command="menu", description="Главное меню"),
+BotCommand(command="q", description="Вопрос программы КП / Q"),
+BotCommand(command="stats", description="Моя статистика"),
+BotCommand(command="help", description="Справка"),
+])
+await dp.start_polling(bot)
+
+if name == 'main':
+asyncio.run(main())
 
