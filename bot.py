@@ -9,7 +9,7 @@ from aiogram.filters import Command, CommandObject, CommandStart
 from aiogram.types import BotCommand, CallbackQuery, Message
 from aiogram.utils.keyboard import InlineKeyboardBuilder
 
-TOKEN = os.getenv("BOT_TOKEN", "ВСТАВЬ_ТОКЕН_ОТ_BOTFATHER")
+TOKEN = "8875284262:AAHYMAPPpE2TsLqRnSANBTaHVZQt8B1Beb8"
 
 # =====================================================================
 #  ДАННЫЕ: ТГП
@@ -3529,4 +3529,4 @@ async def main():
 
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    await main()
