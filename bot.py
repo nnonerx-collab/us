@@ -3517,19 +3517,7 @@ async def cards_retry(c: CallbackQuery):
 
 
 async def main():
-    logging.basicConfig(level=logging.INFO)
-    bot = Bot(TOKEN)
-    await bot.set_my_commands([
-        BotCommand(command="menu", description="Главное меню"),
-        BotCommand(command="q", description="Вопрос программы КП: /q 15"),
-        BotCommand(command="stats", description="Моя статистика"),
-        BotCommand(command="help", description="Справка"),
-    ])
-    await dp.start_polling(bot)
-
-
-async def main():
-TOKEN = "8875284262:AAHYMAPPpE2TsLqRnSANBTaHVZQt8B1Beb8"
+bot = Bot(TOKEN)
 await bot.set_my_commands([
 BotCommand(command="menu", description="Главное меню"),
 BotCommand(command="q", description="Вопрос программы КП / Q"),
